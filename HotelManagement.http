@@ -1,0 +1,53 @@
+@HotelManagement_HostAddress = http://localhost:5100
+
+### 1. Đăng ký tài khoản mới (Customer)
+POST {{HotelManagement_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "Nguyễn Văn Test",
+  "email": "testuser@gmail.com",
+  "password": "Password123@",
+  "confirmPassword": "Password123@",
+  "phoneNumber": "0912345678",
+  "cccd": "079200123456",
+  "nationality": "Việt Nam"
+}
+
+### 2. Đăng nhập tài khoản
+# @name login
+POST {{HotelManagement_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@hotel.com",
+  "password": "Password123@"
+}
+
+### 3. Lấy thông tin tài khoản hiện tại (Profile / Me)
+@authToken = {{login.response.body.token}}
+GET {{HotelManagement_HostAddress}}/api/auth/profile
+Authorization: Bearer {{authToken}}
+
+### 4. Đổi mật khẩu
+POST {{HotelManagement_HostAddress}}/api/auth/change-password
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "currentPassword": "Password123@",
+  "newPassword": "NewPassword123@",
+  "confirmNewPassword": "NewPassword123@"
+}
+
+### 5. Cập nhật thông tin tài khoản
+PUT {{HotelManagement_HostAddress}}/api/auth/profile
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "fullName": "Nguyễn Văn Admin Updated",
+  "phoneNumber": "0900000001",
+  "gender": "Nam",
+  "dateOfBirth": "1990-01-01T00:00:00"
+}
