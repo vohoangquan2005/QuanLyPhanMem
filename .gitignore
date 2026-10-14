@@ -1,0 +1,9 @@
+
+# Frontend (Node.js / Next.js)
+node_modules/
+.next/
+out/
+dist/
+build/
+.env
+.env.local

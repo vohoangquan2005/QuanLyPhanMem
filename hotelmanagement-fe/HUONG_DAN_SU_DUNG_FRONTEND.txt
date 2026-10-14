@@ -1,0 +1,39 @@
+HƯỚNG DẪN SỬ DỤNG FRONTEND
+
+1. Yêu cầu
+- Cài Node.js phiên bản 20.9 trở lên (khuyến nghị dùng bản LTS).
+- Mở Terminal/PowerShell tại thư mục hotelmanagement-fe.
+- Có kết nối Internet lần đầu để tải các thư viện của dự án.
+
+2. Cài đặt thư viện
+Chạy lệnh:
+  npm ci
+
+Lệnh này cài các gói theo cấu hình trong package-lock.json. Nếu npm ci báo lỗi do package-lock.json không đồng bộ, chạy npm install.
+
+3. Cấu hình địa chỉ Backend API
+Dự án dùng biến NEXT_PUBLIC_API_URL để kết nối backend. File .env.local hiện đặt:
+  NEXT_PUBLIC_API_URL=https://localhost:7100/api
+
+Nếu backend chạy ở địa chỉ khác, sửa URL trong .env.local rồi khởi động lại frontend. Khi sử dụng đầy đủ chức năng, cần chạy backend tại địa chỉ đã cấu hình.
+
+4. Chạy ở chế độ phát triển
+Tại thư mục hotelmanagement-fe, chạy:
+  npm run dev
+
+Mở trình duyệt tại:
+  http://localhost:3000
+
+Dừng máy chủ bằng Ctrl+C trong cửa sổ Terminal/PowerShell.
+
+5. Tạo bản build và chạy thử bản build
+  npm run build
+  npm run start
+
+Sau đó mở http://localhost:3000. Lệnh npm run start dùng bản build đã tạo ở bước trước.
+
+6. Một số lỗi thường gặp
+- Không nhận lệnh npm: cài Node.js, sau đó đóng và mở lại Terminal.
+- Không kết nối được API: kiểm tra backend đang chạy và NEXT_PUBLIC_API_URL trong .env.local.
+- Lỗi chứng chỉ HTTPS khi gọi backend cục bộ: chạy PowerShell hoặc Terminal với lệnh `dotnet dev-certs https --trust`, rồi khởi động lại trình duyệt/backend.
+- Cổng 3000 đang được sử dụng: Next.js có thể chọn cổng khác; xem địa chỉ được in trong Terminal.
