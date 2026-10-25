@@ -1,0 +1,10 @@
+export interface RoomImageDto {
+    roomImageId: number;
+    roomId: number;
+    roomName: string | null;
+    imageUrl: string | null;
+    isPrimary: number;
+    displayOrder: number;
+    createAt?: string | null;
+    updateAt?: string | null;
+}
