@@ -1,12 +1,12 @@
-# Giai đoạn 12: Tra cứu khách hàng
+# Giai đoạn 13: Dịch vụ sử dụng theo đặt phòng
 
 ## Chức năng mới trong giai đoạn này
 
-Thêm màn tra cứu khách hàng phục vụ nghiệp vụ đặt phòng.
+Thêm quản lý dịch vụ phát sinh cho từng lượt đặt phòng.
 
 ## Đối chiếu backend
 
-Customer: GET /Customer (Admin/Staff), DELETE /Customer/{id} (Admin); backend không có create/update.
+BookingService: GET/POST/PUT/DELETE theo quyền Admin/Staff.
 
 ## Các chức năng đã có trong snapshot
 
@@ -22,7 +22,8 @@ Customer: GET /Customer (Admin/Staff), DELETE /Customer/{id} (Admin); backend kh
 10. Nghiệp vụ đặt phòng nhân viên
 11. Quản lý khách lưu trú
 12. Tra cứu khách hàng
+13. Dịch vụ sử dụng theo đặt phòng
 
 ## Cách dùng
 
-Thư mục src là snapshot tích lũy đến hết giai đoạn 12. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
+Thư mục src là snapshot tích lũy đến hết giai đoạn 13. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
