@@ -1,12 +1,12 @@
-# Giai đoạn 13: Dịch vụ sử dụng theo đặt phòng
+# Giai đoạn 14: Khuyến mãi và áp dụng khuyến mãi
 
 ## Chức năng mới trong giai đoạn này
 
-Thêm quản lý dịch vụ phát sinh cho từng lượt đặt phòng.
+Thêm form, danh sách khuyến mãi và theo dõi các lần áp dụng.
 
 ## Đối chiếu backend
 
-BookingService: GET/POST/PUT/DELETE theo quyền Admin/Staff.
+Promotion CRUD và ApplyPromotion GET/DELETE; quyền theo backend.
 
 ## Các chức năng đã có trong snapshot
 
@@ -23,7 +23,8 @@ BookingService: GET/POST/PUT/DELETE theo quyền Admin/Staff.
 11. Quản lý khách lưu trú
 12. Tra cứu khách hàng
 13. Dịch vụ sử dụng theo đặt phòng
+14. Khuyến mãi và áp dụng khuyến mãi
 
 ## Cách dùng
 
-Thư mục src là snapshot tích lũy đến hết giai đoạn 13. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
+Thư mục src là snapshot tích lũy đến hết giai đoạn 14. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
