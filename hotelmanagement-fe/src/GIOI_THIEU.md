@@ -1,12 +1,12 @@
-# Giai đoạn 11: Quản lý khách lưu trú
+# Giai đoạn 12: Tra cứu khách hàng
 
 ## Chức năng mới trong giai đoạn này
 
-Thêm danh sách, chi tiết và biểu mẫu khách lưu trú.
+Thêm màn tra cứu khách hàng phục vụ nghiệp vụ đặt phòng.
 
 ## Đối chiếu backend
 
-Guest: GET/POST/PUT/DELETE /Guest theo quyền Admin/Staff.
+Customer: GET /Customer (Admin/Staff), DELETE /Customer/{id} (Admin); backend không có create/update.
 
 ## Các chức năng đã có trong snapshot
 
@@ -21,7 +21,8 @@ Guest: GET/POST/PUT/DELETE /Guest theo quyền Admin/Staff.
 09. Đặt phòng của khách hàng
 10. Nghiệp vụ đặt phòng nhân viên
 11. Quản lý khách lưu trú
+12. Tra cứu khách hàng
 
 ## Cách dùng
 
-Thư mục src là snapshot tích lũy đến hết giai đoạn 11. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
+Thư mục src là snapshot tích lũy đến hết giai đoạn 12. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
