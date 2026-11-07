@@ -1,12 +1,12 @@
-# Giai đoạn 15: Chính sách hủy
+# Giai đoạn 16: Xử lý yêu cầu hủy
 
 ## Chức năng mới trong giai đoạn này
 
-Thêm danh sách và CRUD chính sách hủy đặt phòng.
+Thêm màn vận hành xem, xác nhận hoặc từ chối yêu cầu hủy.
 
 ## Đối chiếu backend
 
-CancellationPolicy: GET/POST/PUT, soft-delete/restore, DELETE.
+Cancellation: GET/POST/PUT confirm/reject; quyền Admin/Staff theo API mapping.
 
 ## Các chức năng đã có trong snapshot
 
@@ -25,7 +25,8 @@ CancellationPolicy: GET/POST/PUT, soft-delete/restore, DELETE.
 13. Dịch vụ sử dụng theo đặt phòng
 14. Khuyến mãi và áp dụng khuyến mãi
 15. Chính sách hủy
+16. Xử lý yêu cầu hủy
 
 ## Cách dùng
 
-Thư mục src là snapshot tích lũy đến hết giai đoạn 15. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
+Thư mục src là snapshot tích lũy đến hết giai đoạn 16. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
