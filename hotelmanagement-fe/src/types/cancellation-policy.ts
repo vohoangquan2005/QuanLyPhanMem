@@ -1,0 +1,17 @@
+export interface CancellationPolicyDto {
+    cancellationPolicyId: number;
+    policyName: string | null;
+    cancellationTime: number;
+    cancellationTimeUnit: number;
+    refundPercentage: number;
+    description: string | null;
+    isDeleted: number;
+}
+
+export interface CancellationPolicyWriteDto {
+    policyName: string;
+    cancellationTime: number;
+    cancellationTimeUnit: number;
+    refundPercentage: number;
+    description: string | null;
+}

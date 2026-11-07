@@ -1,12 +1,12 @@
-# Giai đoạn 14: Khuyến mãi và áp dụng khuyến mãi
+# Giai đoạn 15: Chính sách hủy
 
 ## Chức năng mới trong giai đoạn này
 
-Thêm form, danh sách khuyến mãi và theo dõi các lần áp dụng.
+Thêm danh sách và CRUD chính sách hủy đặt phòng.
 
 ## Đối chiếu backend
 
-Promotion CRUD và ApplyPromotion GET/DELETE; quyền theo backend.
+CancellationPolicy: GET/POST/PUT, soft-delete/restore, DELETE.
 
 ## Các chức năng đã có trong snapshot
 
@@ -24,7 +24,8 @@ Promotion CRUD và ApplyPromotion GET/DELETE; quyền theo backend.
 12. Tra cứu khách hàng
 13. Dịch vụ sử dụng theo đặt phòng
 14. Khuyến mãi và áp dụng khuyến mãi
+15. Chính sách hủy
 
 ## Cách dùng
 
-Thư mục src là snapshot tích lũy đến hết giai đoạn 14. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
+Thư mục src là snapshot tích lũy đến hết giai đoạn 15. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
