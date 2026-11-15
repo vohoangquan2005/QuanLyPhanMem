@@ -1,12 +1,12 @@
-# Giai đoạn 19: Đánh giá
+# Giai đoạn 20: Dashboard vận hành
 
 ## Chức năng mới trong giai đoạn này
 
-Bổ sung kiểm duyệt đánh giá bên cạnh phần đánh giá ở chi tiết phòng/đặt phòng.
+Thêm dashboard cho Admin và Staff.
 
 ## Đối chiếu backend
 
-Review: POST cho Customer; đọc/duyệt phụ thuộc endpoint và quyền hiện có.
+Dashboard: GET /Dashboard; quyền cần lưu ý theo controller hiện tại.
 
 ## Các chức năng đã có trong snapshot
 
@@ -29,7 +29,8 @@ Review: POST cho Customer; đọc/duyệt phụ thuộc endpoint và quyền hi�
 17. Hóa đơn
 18. Thanh toán
 19. Đánh giá
+20. Dashboard vận hành
 
 ## Cách dùng
 
-Thư mục src là snapshot tích lũy đến hết giai đoạn 19. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
+Thư mục src là snapshot tích lũy đến hết giai đoạn 20. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
