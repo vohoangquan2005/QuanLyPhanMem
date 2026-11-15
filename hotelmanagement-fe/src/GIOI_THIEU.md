@@ -1,12 +1,12 @@
-# Giai đoạn 18: Thanh toán
+# Giai đoạn 19: Đánh giá
 
 ## Chức năng mới trong giai đoạn này
 
-Thêm thanh toán cá nhân và màn xử lý thanh toán của nhân viên.
+Bổ sung kiểm duyệt đánh giá bên cạnh phần đánh giá ở chi tiết phòng/đặt phòng.
 
 ## Đối chiếu backend
 
-Payment: GET/POST, PUT confirm/reject, DELETE; không có cổng thanh toán Customer.
+Review: POST cho Customer; đọc/duyệt phụ thuộc endpoint và quyền hiện có.
 
 ## Các chức năng đã có trong snapshot
 
@@ -28,7 +28,8 @@ Payment: GET/POST, PUT confirm/reject, DELETE; không có cổng thanh toán Cus
 16. Xử lý yêu cầu hủy
 17. Hóa đơn
 18. Thanh toán
+19. Đánh giá
 
 ## Cách dùng
 
-Thư mục src là snapshot tích lũy đến hết giai đoạn 18. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
+Thư mục src là snapshot tích lũy đến hết giai đoạn 19. Sao chép nội dung src này vào thư mục src gốc của hotelmanagement-fe để xem hoặc tiếp tục phát triển. Phần giới thiệu được cập nhật theo chức năng mới ở mỗi giai đoạn.
